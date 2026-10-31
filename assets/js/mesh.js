@@ -1,5 +1,5 @@
-/* Drifting triangulated field (adapted from the connected-triangle background in inspiring_repo)
-   and deterministic low-poly emblems. No dependencies. */
+/* Drifting triangulated field, adapted from the connected-triangle background in inspiring_repo.
+   No dependencies. */
 (() => {
   'use strict';
 
@@ -37,8 +37,7 @@
   const hash = (i) => { const x = Math.sin(i * 127.1 + 41.7) * 43758.5453; return x - Math.floor(x); };
   const rgb = (el, name, fallback) => (getComputedStyle(el).getPropertyValue(name).trim() || fallback);
 
-  /* mode: 'hero'  – tinted facets over a photograph, white edges
-           'band'  – light edges over a dark band
+  /* mode: 'hero'  – faint white edges over a photograph
            'plain' – faint edges over the page background */
   function field(element, { mode = 'plain', paused = false } = {}) {
     const canvas = element.querySelector('.mesh');
@@ -112,20 +111,19 @@
       }
 
       const hero = mode === 'hero';
-      if (hero) { ctx.fillStyle = `rgba(${tint},.2)`; ctx.fillRect(0, 0, width, height); }
       triangles.forEach(({ ids, shade }, i) => {
         const [a, b, c] = ids.map(id => nodes[id]);
         const near = nearness((a.x + b.x + c.x) / 3, (a.y + b.y + c.y) / 3, 260);
         const breathe = stopped ? 0 : (Math.sin(time * 0.33 + i * 0.7) + 1) * 0.5;
         let alpha;
-        if (hero) alpha = Math.max(0, 0.1 + shade * 0.3 + breathe * 0.05 - near * 0.3);
-        else alpha = (i % 7 === 0 ? 0.05 : 0.008) + breathe * 0.022 + near * 0.09;
+        if (hero) alpha = Math.max(0, shade * 0.12 + breathe * 0.03 - near * 0.1);
+        else alpha = (i % 7 === 0 ? 0.04 : 0.006) + breathe * 0.016 + near * 0.06;
         ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.lineTo(c.x, c.y); ctx.closePath();
         ctx.fillStyle = `rgba(${hero ? tint : line},${alpha})`; ctx.fill();
       });
 
       const edge = hero ? '255,255,255' : line;
-      const base = hero ? 0.1 : mode === 'band' ? 0.16 : 0.13;
+      const base = hero ? 0.13 : 0.12;
       for (const [ai, bi] of edges) {
         const a = nodes[ai], b = nodes[bi];
         const near = nearness((a.x + b.x) / 2, (a.y + b.y) / 2, 250);
@@ -175,26 +173,5 @@
     return { setPaused, refresh };
   }
 
-  // A small deterministic low-poly emblem (SVG markup) seeded by a string.
-  function emblem(seed, size = 64) {
-    let h = 2166136261;
-    for (const ch of seed) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); }
-    const rand = () => { h = Math.imul(h ^ (h >>> 15), 2246822507); h = Math.imul(h ^ (h >>> 13), 3266489909); return ((h ^= h >>> 16) >>> 0) / 4294967296; };
-    const pts = [{ x: 50, y: 4 }, { x: 96, y: 86 }, { x: 4, y: 86 }];
-    for (let i = 0; i < 6; i++) {
-      // sample inside the outer triangle so the emblem keeps a triangular silhouette
-      let u = rand(), v = rand(); if (u + v > 1) { u = 1 - u; v = 1 - v; }
-      pts.push({ x: 50 + u * 46 - v * 46, y: 4 + u * 82 + v * 82 });
-    }
-    const tris = triangulate(pts);
-    const accent = Math.floor(rand() * tris.length);
-    const faces = tris.map((ids, i) => {
-      const d = ids.map(id => `${pts[id].x.toFixed(1)},${pts[id].y.toFixed(1)}`).join(' ');
-      const cls = i === accent ? 'e-accent' : `e-f${Math.floor(rand() * 3)}`;
-      return `<polygon class="${cls}" points="${d}"/>`;
-    }).join('');
-    return `<svg class="emblem" viewBox="0 0 100 90" width="${size}" height="${size * 0.9}" aria-hidden="true" focusable="false">${faces}</svg>`;
-  }
-
-  window.Mesh = { triangulate, field, emblem };
+  window.Mesh = { triangulate, field };
 })();
