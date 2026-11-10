@@ -202,7 +202,7 @@ window.SITE = {
         stack: ['GRPO', 'Gemma 3', 'Qwen 3', 'Helm', 'ArgoCD', 'Django']
       },
       {
-        start: '2025-02', end: '2025-09', org: { en: 'Mohaymen ICT Group', fa: 'گروه فاوای مهیمن' }, role: { en: 'AI Engineer', fa: 'مهندس هوش مصنوعی' },
+        start: '2025-02', end: '2025-09', org: { en: 'Mohaymen ICT Group', fa: 'گروه فناوری مهیمن' }, role: { en: 'AI Engineer', fa: 'مهندس هوش مصنوعی' },
         en: [
           'Maintained production AI services with <b>Docker Compose</b> and implemented three-phase chat-response caching with <b>Redis</b>.',
           'Improved RAG-system performance through <b>asynchronous programming</b> and <b>multi-process logic</b>.',
@@ -222,7 +222,7 @@ window.SITE = {
         stack: ['RAG', 'Redis', 'FastAPI', 'vLLM', 'NeMo', 'Phoenix', 'Locust']
       },
       {
-        start: '2024-07', end: '2024-11', org: { en: 'Mohaymen ICT Group', fa: 'گروه فاوای مهیمن' }, role: { en: 'Machine Learning Engineer', fa: 'مهندس یادگیری ماشین' },
+        start: '2024-07', end: '2024-11', org: { en: 'Mohaymen ICT Group', fa: 'گروه فناوری مهیمن' }, role: { en: 'Machine Learning Engineer', fa: 'مهندس یادگیری ماشین' },
         en: [
           'Fine-tuned a <b>BERT</b> model to better detect questions similar to a user’s query.',
           'Developed an <b>intelligent spelling corrector</b> based on context, frequency analysis and similarity scores.',
@@ -260,14 +260,14 @@ window.SITE = {
       {
         start: '2025-07', end: '2026-05', remote: true,
         en: {
-          title: 'Maximum Divergence Knowledge Distillation', inst: 'University of Waterloo', sup: 'Prof. A. Ghodsi',
+          title: 'Maximum Divergence Knowledge Distillation', inst: 'University of Waterloo, Canada', sup: 'Prof. A. Ghodsi',
           points: [
             'Proposed <b>MDKD</b>, a rejection-sampling distillation method that targets regions where student LLMs underestimate the teacher.',
             'Achieved state-of-the-art performance on <b>GSM8K</b>, summarization and code generation.'
           ]
         },
         fa: {
-          title: 'تقطیر دانش با بیشینه واگرایی', inst: 'دانشگاه واترلو', sup: 'پروفسور قدسی',
+          title: 'تقطیر دانش با بیشینه واگرایی', inst: 'دانشگاه واترلو، کانادا', sup: 'پروفسور قدسی',
           points: [
             'ارائه روش <b>MDKD</b>؛ روشی برای تقطیر مبتنی بر نمونه‌برداری رد که نواحی‌ای را هدف می‌گیرد که در آن‌ها مدل زبانی دانش‌آموز احتمال مدل معلم را کم‌برآورد می‌کند.',
             'دستیابی به عملکرد پیشرو در <b>GSM8K</b>، خلاصه‌سازی و تولید کد.'
@@ -277,7 +277,7 @@ window.SITE = {
       {
         start: '2023-04', end: '2026-02', remote: true,
         en: {
-          title: 'Mental Wellness Chatbot', inst: 'Imperial College London', sup: 'Prof. A. Edalat',
+          title: 'Mental Wellness Chatbot', inst: 'Imperial College London, UK', sup: 'Prof. A. Edalat',
           points: [
             'Developed a <b>chatbot</b> that recommends exercise regimens based on <b>self-attachment theory (SAT)</b> protocols.',
             'Trained a transformer-based <b>emotion classifier</b> over 12 classes, reaching a 92% F1 score.',
@@ -286,7 +286,7 @@ window.SITE = {
           ]
         },
         fa: {
-          title: 'چت‌بات سلامت روان', inst: 'امپریال کالج لندن', sup: 'پروفسور عدالت',
+          title: 'چت‌بات سلامت روان', inst: 'امپریال کالج لندن، بریتانیا', sup: 'پروفسور عدالت',
           points: [
             'توسعه یک <b>چت‌بات</b> برای پیشنهاد برنامه تمرینی بر پایه پروتکل‌های <b>نظریه خوددلبستگی (SAT)</b>.',
             'آموزش یک <b>دسته‌بند احساسات</b> مبتنی بر ترنسفورمر در ۱۲ کلاس با امتیاز F1 برابر ۹۲٪.',
@@ -298,14 +298,14 @@ window.SITE = {
       {
         start: '2025-04', end: '2026-02', remote: true,
         en: {
-          title: 'Synthetic Data in Data Selection Methods', inst: 'Rensselaer Polytechnic Institute', sup: 'Prof. Amiri',
+          title: 'Synthetic Data in Data Selection Methods', inst: 'Rensselaer Polytechnic Institute, USA', sup: 'Prof. Amiri',
           points: [
             'Implemented an <b>adversarial approach</b> to data selection for pre-training foundation models.',
             'Analyzed how data-mixing methods such as <b>DoReMi</b> weight synthetic data.'
           ]
         },
         fa: {
-          title: 'داده‌های مصنوعی در روش‌های انتخاب داده', inst: 'مؤسسه پلی‌تکنیک رنسلر', sup: 'پروفسور امیری',
+          title: 'داده‌های مصنوعی در روش‌های انتخاب داده', inst: 'مؤسسه پلی‌تکنیک رنسلر، آمریکا', sup: 'پروفسور امیری',
           points: [
             'پیاده‌سازی یک <b>رویکرد تخاصمی</b> برای انتخاب داده در پیش‌آموزش مدل‌های پایه.',
             'تحلیل توزیع وزن‌دهی داده‌های مصنوعی در روش‌های ترکیب داده مانند <b>DoReMi</b>.'
@@ -315,7 +315,7 @@ window.SITE = {
       {
         start: '2024-05', end: '2024-12',
         en: {
-          title: 'News Importance Classification with LLMs', inst: 'Sharif University of Technology', sup: 'Prof. Jafari',
+          title: 'News Importance Classification with LLMs', inst: 'Sharif University of Technology, Iran', sup: 'Prof. Jafari',
           points: [
             'Used <b>symbol tuning</b> to evaluate how sensitive LLMs are to prompt variations.',
             'Compared the <b>reasoning abilities</b> of open-source LLMs on a new human-labeled Persian news dataset.',
@@ -323,7 +323,7 @@ window.SITE = {
           ]
         },
         fa: {
-          title: 'دسته‌بندی اهمیت اخبار با مدل‌های زبانی بزرگ', inst: 'دانشگاه صنعتی شریف', sup: 'دکتر جعفری',
+          title: 'دسته‌بندی اهمیت اخبار با مدل‌های زبانی بزرگ', inst: 'دانشگاه صنعتی شریف، ایران', sup: 'دکتر جعفری',
           points: [
             'استفاده از روش <b>Symbol Tuning</b> برای سنجش حساسیت مدل‌های زبانی بزرگ به تغییرات پرامپت.',
             'مقایسه <b>توانایی استدلال</b> مدل‌های زبانی متن‌باز روی یک مجموعه‌داده جدید از اخبار فارسی با برچسب انسانی.',
@@ -334,7 +334,7 @@ window.SITE = {
       {
         start: '2024-06', end: '2024-10',
         en: {
-          title: 'LLM Citation Benchmark', inst: 'Sharif University of Technology', sup: 'Prof. Asgari',
+          title: 'LLM Citation Benchmark', inst: 'Sharif University of Technology, Iran', sup: 'Prof. Asgari',
           points: [
             'Built a comprehensive framework to evaluate the <b>medical citation quality</b> of LLMs.',
             'Used <b>fact validation</b> with a weighted scoring system for accuracy and relevance.',
@@ -342,7 +342,7 @@ window.SITE = {
           ]
         },
         fa: {
-          title: 'محک ارجاع‌دهی مدل‌های زبانی بزرگ', inst: 'دانشگاه صنعتی شریف', sup: 'دکتر عسگری',
+          title: 'محک ارجاع‌دهی مدل‌های زبانی بزرگ', inst: 'دانشگاه صنعتی شریف، ایران', sup: 'دکتر عسگری',
           points: [
             'توسعه چارچوبی جامع برای ارزیابی <b>کیفیت ارجاع‌دهی پزشکی</b> مدل‌های زبانی بزرگ.',
             'به‌کارگیری <b>اعتبارسنجی واقعیت</b> همراه با امتیازدهی وزن‌دار برای دقت و ارتباط.',
@@ -353,11 +353,11 @@ window.SITE = {
       {
         start: '2023-11', end: '2024-09',
         en: {
-          title: 'Survey on Diffusion Models', inst: 'Sharif University of Technology', sup: 'Prof. Rohban and Prof. Soleymani',
+          title: 'Survey on Diffusion Models', inst: 'Sharif University of Technology, Iran', sup: 'Prof. Rohban and Prof. Soleymani',
           points: ['Examined the <b>compositional challenges</b> that arise during generation in <b>diffusion models</b>.']
         },
         fa: {
-          title: 'مرور مدل‌های انتشار', inst: 'دانشگاه صنعتی شریف', sup: 'دکتر رهبان و دکتر سلیمانی',
+          title: 'مرور مدل‌های انتشار', inst: 'دانشگاه صنعتی شریف، ایران', sup: 'دکتر رهبان و دکتر سلیمانی',
           points: ['بررسی <b>چالش‌های ترکیب‌پذیری</b> در فرایند تولید <b>مدل‌های انتشار</b>.']
         }
       }
@@ -404,15 +404,14 @@ window.SITE = {
   },
 
   teaching: {
-    en: { title: 'Teaching', lede: 'Teaching assistant for 25 course offerings over nine semesters at Sharif University of Technology, including three as head teaching assistant.' },
-    fa: { title: 'تدریس', lede: 'دستیار آموزشی در ۲۵ ارائه درس طی نُه نیم‌سال در دانشگاه صنعتی شریف، از جمله سه ارائه به‌عنوان سرپرست دستیاران آموزشی.' },
+    en: { title: 'Teaching', lede: 'Teaching assistant for 24 course offerings over nine semesters at Sharif University of Technology, including three as head teaching assistant.' },
+    fa: { title: 'تدریس', lede: 'دستیار آموزشی در ۲۴ ارائه درس طی نُه نیم‌سال در دانشگاه صنعتی شریف، از جمله سه ارائه به‌عنوان سرپرست دستیاران آموزشی.' },
     seasons: { en: { fall: 'Fall', spring: 'Spring', summer: 'Summer' }, fa: { fall: 'پاییز', spring: 'بهار', summer: 'تابستان' } },
     // Terms are listed most recent first.
     courses: [
       { head: true, terms: [['spring', 2024], ['fall', 2023]], en: 'Compiler Design', fa: 'طراحی کامپایلر', by: { en: 'Dr. S. Hosseinmardi', fa: 'دکتر حسین‌مردی' } },
       { head: true, terms: [['spring', 2023]], en: 'Mobile Programming', fa: 'برنامه‌نویسی موبایل', by: { en: 'Dr. S. Nari', fa: 'دکتر ناری' } },
       { terms: [['fall', 2026]], en: 'Deep Learning (M.Sc.)', fa: 'یادگیری عمیق (کارشناسی ارشد)', by: { en: 'Dr. M. Soleymani', fa: 'دکتر سلیمانی' } },
-      { terms: [['fall', 2026]], en: 'Advanced Computer Vision (M.Sc.)', fa: 'بینایی کامپیوتر پیشرفته (کارشناسی ارشد)', by: { en: 'Dr. S. Kasaei', fa: 'دکتر کسائی' } },
       { terms: [['fall', 2026]], en: 'Natural Language Processing (M.Sc.)', fa: 'پردازش زبان طبیعی (کارشناسی ارشد)', by: { en: 'Dr. M. Samiei', fa: 'دکتر سمیعی' } },
       { terms: [['spring', 2026]], en: 'Modern Information Retrieval', fa: 'بازیابی پیشرفته اطلاعات', by: { en: 'Dr. M. Soleymani', fa: 'دکتر سلیمانی' } },
       { terms: [['spring', 2024]], en: 'Machine Learning', fa: 'یادگیری ماشین', by: { en: 'Dr. F. Salehi', fa: 'دکتر صالحی' } },
@@ -484,7 +483,7 @@ window.SITE = {
     groups: [
       { en: 'Machine learning', fa: 'یادگیری ماشین', items: 'PyTorch, TensorFlow, scikit-learn, Transformers, vLLM, FAISS, Rasa' },
       { en: 'Data and visualization', fa: 'داده و مصورسازی', items: 'NumPy, Pandas, Matplotlib, Streamlit' },
-      { en: 'Programming', fa: 'برنامه‌نویسی', items: 'Python, Java, C#, Swift, TypeScript, JavaScript' },
+      { en: 'Programming', fa: 'برنامه‌نویسی', items: 'Python, Java, C#, Swift, MQL4, MQL5, TypeScript, JavaScript' },
       { en: 'Backend and databases', fa: 'بک‌اند و پایگاه داده', items: 'FastAPI, Django, REST APIs, PostgreSQL, MongoDB, Redis' },
       { en: 'Web', fa: 'وب', items: 'React, HTML, CSS' },
       { en: 'DevOps', fa: 'DevOps', items: 'Docker, Docker Compose, Kubernetes, ArgoCD, Kibana' },
