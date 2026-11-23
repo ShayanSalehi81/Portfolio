@@ -151,7 +151,7 @@ b { font-weight: 600; }
 .pub-authors { margin-top: 3px; font-size: .98rem; color: var(--ink-2); }
 .pub-authors b { color: var(--ink); }
 .pub [lang="en"] { font-family: var(--serif); }
-.pub-venue { font-size: .96rem; color: var(--muted); }
+.pub-venue, .pub-location { font-size: .96rem; color: var(--muted); }
 .pub-tag { align-self: start; margin-top: 3px; padding: 2px 8px; border-radius: 3px; background: var(--sky); color: #1d2b2e; font: 600 .78rem/1.5 var(--sans); white-space: nowrap; }
 .pubs:nth-of-type(2) .pub-tag { background: var(--mint); }
 

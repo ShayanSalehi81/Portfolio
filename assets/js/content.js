@@ -107,37 +107,43 @@ window.SITE = {
         title: 'Learning from Disagreement: Maximum Divergence Knowledge Distillation',
         authors: 'A. Jafari, P. Fashi, M. Rezagholizadeh, H. Golmankhaneh, S. Salehi, V. Appia, E. Barsoum, A. Ghodsi',
         short: 'NeurIPS 2026', status: 'published',
-        venue: { en: 'Conference on Neural Information Processing Systems (NeurIPS), 2026.', fa: 'کنفرانس سامانه‌های پردازش اطلاعات عصبی (NeurIPS)، ۲۰۲۶.' }
+        venue: { en: 'Conference on Neural Information Processing Systems (NeurIPS), 2026.', fa: 'کنفرانس سامانه‌های پردازش اطلاعات عصبی (NeurIPS)، ۲۰۲۶.' },
+        location: { en: 'Sydney, Australia', fa: 'سیدنی، استرالیا' }
       },
       {
         title: 'The Compute Floor of Data Mixing: When Loss-Based Reweighters Start to Drain Easy Synthetic Text',
         authors: 'S. Salehi, I. Mohammadi',
         short: 'COLM 2026 Workshop', status: 'published',
-        venue: { en: 'COLM 2026 Workshop on Methods and Opportunities at Small Scale (MOSS).', fa: 'کارگاه «روش‌ها و فرصت‌ها در مقیاس کوچک» (MOSS)، کنفرانس COLM ۲۰۲۶.' }
+        venue: { en: 'COLM 2026 Workshop on Methods and Opportunities at Small Scale (MOSS).', fa: 'کارگاه «روش‌ها و فرصت‌ها در مقیاس کوچک» (MOSS)، کنفرانس COLM ۲۰۲۶.' },
+        location: { en: 'San Francisco, USA', fa: 'سان‌فرانسیسکو، آمریکا' }
       },
       {
         title: 'Structure Matters: Evaluating Multi-Agents Orchestration in Generative Therapeutic Chatbots',
         authors: 'S. Elahimanesh, M. Mohammadkhani, S. Zahedi Movahed, M. Abootorabi, S. Salehi, A. Edalat',
         short: 'ACM CUI 2026', status: 'published',
-        venue: { en: 'ACM Conference on Conversational User Interfaces (CUI), 2026.', fa: 'کنفرانس ACM رابط‌های کاربری گفت‌وگومحور (CUI)، ۲۰۲۶.' }
+        venue: { en: 'ACM Conference on Conversational User Interfaces (CUI), 2026.', fa: 'کنفرانس ACM رابط‌های کاربری گفت‌وگومحور (CUI)، ۲۰۲۶.' },
+        location: { en: 'Bremen, Germany', fa: 'برمن، آلمان' }
       },
       {
         title: 'PrivacyPeek: Showing Users What Their AI Chats Send Out, and When It Crosses a Line',
         authors: 'I. Mohammadi, S. Salehi',
-        short: 'USIT 2026 Poster', status: 'published',
-        venue: { en: 'USIT 2026, Poster Session.', fa: 'بخش پوستر USIT ۲۰۲۶.' }
+        short: 'UIST 2026 Poster', status: 'published',
+        venue: { en: 'UIST 2026, Poster Session.', fa: 'بخش پوستر UIST ۲۰۲۶.' },
+        location: { en: 'Detroit, USA', fa: 'دیترویت، آمریکا' }
       },
       {
         title: 'Folk Theories of Federated Moderation: How Users Make Sense of Cross-Instance Action',
         authors: 'I. Mohammadi, S. Salehi',
         short: 'CSCW 2026 Poster', status: 'published',
-        venue: { en: 'ACM Conference on Computer-Supported Cooperative Work (CSCW), 2026, Poster Session.', fa: 'بخش پوستر کنفرانس ACM CSCW ۲۰۲۶.' }
+        venue: { en: 'ACM Conference on Computer-Supported Cooperative Work (CSCW), 2026, Poster Session.', fa: 'بخش پوستر کنفرانس ACM CSCW ۲۰۲۶.' },
+        location: { en: 'Salt Lake City, USA', fa: 'سالت‌لیک‌سیتی، آمریکا' }
       },
       {
         title: 'Understanding Students’ Rationales for Cheating with AI: An Instructor Perspective',
         authors: 'I. Mohammadi, S. Rismanchian, S. Salehi',
         short: 'ICLS 2026 Poster', status: 'published',
-        venue: { en: 'International Conference of the Learning Sciences (ICLS), 2026, Poster Session.', fa: 'بخش پوستر کنفرانس بین‌المللی علوم یادگیری (ICLS) ۲۰۲۶.' }
+        venue: { en: 'International Conference of the Learning Sciences (ICLS), 2026, Poster Session.', fa: 'بخش پوستر کنفرانس بین‌المللی علوم یادگیری (ICLS) ۲۰۲۶.' },
+        location: { en: 'Irvine, USA', fa: 'ارواین، آمریکا' }
       },
       {
         title: 'From Words and Exercises to Wellness: Farsi Chatbot for Self-Attachment',
@@ -395,7 +401,7 @@ window.SITE = {
     en: { title: 'Honors and Awards' },
     fa: { title: 'افتخارات' },
     items: [
-      { rank: 1, pool: 2100, unit: { en: 'teams', fa: 'تیم' }, top: 0.05, date: '2025-10', en: 'NLP Tech Olympics 2025', fa: 'المپیک فناوری پردازش زبان طبیعی ۲۰۲۵' },
+      { rank: 1, pool: 2100, unit: { en: 'teams', fa: 'تیم' }, top: 0.05, date: '2025-10', en: 'NLP Tech Olympics (Iran)', fa: 'المپیک فناوری پردازش زبان طبیعی (ایران)' },
       { rank: 16, pool: 22000, unit: { en: 'candidates', fa: 'داوطلب' }, top: 0.07, date: '2025-02', en: 'National M.Sc. Entrance Exam', fa: 'آزمون سراسری کارشناسی ارشد' },
       { rank: 10, pool: 1200, unit: { en: 'candidates', fa: 'داوطلب' }, top: 0.8, date: '2024-08', en: 'National Student Olympiad', fa: 'المپیاد دانشجویی کشور' },
       { rank: 25, pool: 155000, unit: { en: 'candidates', fa: 'داوطلب' }, top: 0.02, date: '2020-10', en: 'National University Entrance Exam (B.Sc.)', fa: 'آزمون سراسری ورود به دانشگاه (کنکور کارشناسی)' },

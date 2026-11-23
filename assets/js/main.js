@@ -91,6 +91,7 @@
               <p class="pub-title"><span dir="ltr" lang="en">${p.title}</span></p>
               <p class="pub-authors"><span dir="ltr" lang="en">${p.authors.replace('S. Salehi', '<b>S. Salehi</b>')}</span></p>
               ${p.venue ? `<p class="pub-venue">${t(p.venue)}</p>` : ''}
+              ${p.location ? `<p class="pub-location">${ui('location')}: ${t(p.location)}</p>` : ''}
             </div>
             ${p.short ? `<span class="pub-tag" dir="ltr">${p.short}</span>` : ''}
           </li>`;
